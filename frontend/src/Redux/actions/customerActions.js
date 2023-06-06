@@ -20,7 +20,7 @@ import {
   UPDATE_CUSTOMER_SUCCESS,
 } from "../constants/customerConstants";
 import { CLEAR_ERRORS } from "../constants/purchaseConstants";
-import { base_url } from "../../utils/baseUrl";
+import { base_url } from "../../Utils/baseUrl";
 
 //Create Customer
 export const createCustomerAction = (myForm) => async (dispatch) => {

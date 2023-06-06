@@ -187,7 +187,6 @@ const Customerwisepurchases = React.memo(() => {
           </ModalRoot>
         )}
       </div>
-      {console.log(loading)}
       {loading === true ? (
         <Loading />
       ) : customerWisePurchaseState === undefined ||

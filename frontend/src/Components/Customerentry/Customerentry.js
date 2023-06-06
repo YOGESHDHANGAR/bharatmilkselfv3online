@@ -150,6 +150,7 @@ const Customerentry = () => {
   useEffect(() => {
     setMilkFatState(
       getfatrateLoading === false &&
+        getfatrate.length > 0 &&
         getfatrate[0].fat_rate &&
         getfatrate[0].fat_rate.toFixed(2)
     );

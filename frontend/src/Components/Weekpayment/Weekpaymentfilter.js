@@ -3,7 +3,7 @@ import "./Weekpaymentfilter.css";
 import "react-datepicker/dist/react-datepicker.css";
 import { useDispatch, useSelector } from "react-redux";
 import { weekWisePurchaseAction } from "../../Redux/actions/purchaseActions";
-import lastWeekDates from "../../utils/lastWeekDates";
+import lastWeekDates from "../../Utils/lastWeekDates";
 import {
   getLockedStateAction,
   getUpdatedLockDateAction,
@@ -67,7 +67,6 @@ const Filter = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     dispatch(weekWisePurchaseAction(fromDate, toDate));
-    dispatch(weekWisePurchaseForSecondLastWeekAction(fromDate, toDate));
   };
 
   const handlePrintFromChild = () => {
@@ -81,7 +80,11 @@ const Filter = (props) => {
   };
 
   useEffect(() => {
-    if (getlockstateLoading === false) {
+    if (
+      getlockstateLoading === false &&
+      getlockstate.length > 0 &&
+      getlockstate[0].lock_status
+    ) {
       setLockState(getlockstate[0].lock_status);
     }
   }, [getlockstateLoading, getlockeddateLoading]);

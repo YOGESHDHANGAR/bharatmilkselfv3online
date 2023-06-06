@@ -7,7 +7,7 @@ import {
   GET_PREVIOUS_SELECTED_YEAR_REQUEST,
   GET_PREVIOUS_SELECTED_YEAR_SUCCESS,
 } from "../constants/customDataSelectorConstants";
-import { base_url } from "../../utils/baseUrl";
+import { base_url } from "../../Utils/baseUrl";
 
 export const getpreviousSelectedYearAction = () => async (dispatch) => {
   try {

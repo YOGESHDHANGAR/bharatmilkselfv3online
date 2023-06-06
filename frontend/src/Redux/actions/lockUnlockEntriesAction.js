@@ -13,7 +13,7 @@ import {
   TOGGLE_LOCK_REQUEST,
   TOGGLE_LOCK_SUCCESS,
 } from "../constants/lockUnlockEntriesReducer";
-import { base_url } from "../../utils/baseUrl";
+import { base_url } from "../../Utils/baseUrl";
 
 //get locked date
 export const getLockDateAction = () => async (dispatch) => {

@@ -6,7 +6,7 @@ import {
   customerWisePurchaseAction,
   customerWisePurchaseOutliersAction,
 } from "../../Redux/actions/purchaseActions";
-import lastWeekDates from "../../utils/lastWeekDates";
+import lastWeekDates from "../../Utils/lastWeekDates";
 
 const Customerwisepurchasesfilter = () => {
   const dispatch = useDispatch();

@@ -29,7 +29,7 @@ import {
   GET_LATEST_PURCHASE_SERIAL_SUCCESS,
   GET_LATEST_PURCHASE_SERIAL_FAIL,
 } from "../constants/purchaseConstants";
-import { base_url } from "../../utils/baseUrl";
+import { base_url } from "../../Utils/baseUrl";
 
 //Create Purchase
 export const createPurchaseAction = (myForm) => async (dispatch) => {
@@ -107,7 +107,6 @@ export const getAllPurchaseAction =
       link = link.slice(0, -1);
 
       const { data } = await axios.get(link);
-
       dispatch({
         type: ALL_PURCHASE_SUCCESS,
         payload: data,

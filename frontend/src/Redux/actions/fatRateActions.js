@@ -8,7 +8,7 @@ import {
   UPDATE_FAT_RATE_FAIL,
 } from "../constants/fatRateConstants";
 import { CLEAR_ERRORS } from "../constants/purchaseConstants";
-import { base_url } from "../../utils/baseUrl";
+import { base_url } from "../../Utils/baseUrl";
 
 //Get Fat Rate Details
 export const getFatRateAction = () => async (dispatch) => {

@@ -117,11 +117,11 @@ const Weekpayment = () => {
                     }
                   )}
               </div>
-              {weekwisepurchaseLoading &&
-                (lastWeek1 !== undefined) &
-                  (lastWeek1.length !== 0 && (
-                    <Weekpaymenttotalfieldbottom lastWeek1={lastWeek1} />
-                  ))}
+              {!weekwisepurchaseLoading &&
+                lastWeek1 !== undefined &&
+                lastWeek1.length !== 0 && (
+                  <Weekpaymenttotalfieldbottom lastWeek1={lastWeek1} />
+                )}
             </div>
 
             <div className={"week_divider"}>
