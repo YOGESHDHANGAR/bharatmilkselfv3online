@@ -1,0 +1,6 @@
+.no_result_found {
+  display: flex;
+  justify-content: center;
+  margin: 14vmax;
+  color: red;
+}

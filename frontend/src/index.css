@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  scrollbar-width: 0;
+  scrollbar-color: transparent transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

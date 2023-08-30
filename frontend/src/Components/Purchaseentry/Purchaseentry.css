@@ -1,0 +1,235 @@
+.purchaseentry_container {
+  position: fixed;
+  top: 25%;
+  left: 9%;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  margin-top: 1vmax;
+  background-color: rgb(176, 117, 231);
+  border-radius: 30px;
+  padding: 50px;
+  color: white;
+  font-size: 1.1rem;
+  -webkit-box-shadow: -5px 5px 3px -1px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: -5px 5px 3px -1px rgba(0, 0, 0, 0.59);
+  box-shadow: -5px 5px 3px -1px rgba(0, 0, 0, 0.59);
+}
+.purchaseentry_container > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchaseentry_container > div > label {
+  margin: 1vmax;
+}
+
+.purchaseentry_container > div > select {
+  margin: 1vmax;
+}
+
+.purchaseentry_container > div > label > input {
+  width: 8vmax;
+  height: 1.3vmax;
+  font-size: 1.1rem;
+  padding-left: 7px;
+}
+
+.select_customerid {
+  width: 8.75vmax;
+  height: 1.7vmax;
+  font-size: 1.1rem;
+  padding-left: 7px;
+}
+
+.customerid_name_select {
+  width: 8.75vmax;
+  height: 1.7vmax;
+  font-size: 1.1rem;
+  padding-left: 7px;
+}
+
+.customer_name_select {
+  width: 20vmax;
+  height: 1.7vmax;
+  font-size: 1.1rem;
+  padding-left: 7px;
+}
+
+.customer_shift_select {
+  width: 8.75vmax;
+  height: 1.7vmax;
+  font-size: 1.1rem;
+  padding-left: 7px;
+}
+
+.customer_type_select {
+  width: 8.75vmax;
+  height: 1.7vmax;
+  font-size: 1.1rem;
+  padding-left: 7px;
+}
+
+.purchaseentry_serialno_lable > input {
+  margin-left: 40px;
+}
+
+.purchaseentry_customerid_lable > select {
+  margin-left: 18px;
+}
+
+.purchaseentry_customername_lable > select {
+  margin-left: 20px;
+}
+
+.purchaseentry_date_lable > input {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.purchaseentry_shift_lable > select {
+  margin-left: 20px;
+}
+.morning {
+  color: white;
+  background-color: rgb(246, 127, 0);
+}
+
+.evening {
+  color: white;
+  background-color: rgb(146, 145, 145);
+}
+
+.purchaseentry_type_lable > select {
+  margin-left: 78px;
+}
+
+.purchaseentry_quantity_lable > input {
+  margin-left: 84px;
+  margin-right: 183px;
+}
+
+.purchaseentry_fat_lable > input {
+  margin-left: 20px;
+}
+
+.purchaseentry_clr_lable > input {
+  margin-left: 81px;
+}
+
+.purchaseentry_rate_lable > input {
+  margin-left: 112px;
+  margin-right: 148px;
+}
+
+.purchaseentry_amount_lable > input {
+  margin-left: 20px;
+}
+
+.purchaseentry_save_update_refresh_delete {
+  padding: 3vmax 8vmax;
+}
+
+.purchaseentry_save_update_refresh_delete > input {
+  font-size: 1.1rem;
+  width: 8vmax;
+  height: 2vmax;
+}
+
+.purchaseentry_save_update_refresh_delete > input:hover {
+  color: white;
+  background-color: black;
+}
+.purchaseentry_save_update_refresh_delete > input:focus {
+  color: white;
+  background-color: black;
+}
+
+.success_fail_check {
+  position: absolute;
+  top: 90%;
+  left: 43%;
+  text-align: center;
+}
+
+.success_check {
+  color: rgb(1, 103, 1);
+}
+
+.fail_check {
+  color: rgb(229, 22, 22);
+}
+
+.purchaseentry_showlastentry {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  display: flex;
+  justify-content: space-around;
+  width: 75vw;
+  border-radius: 30px;
+  background-color: rgb(84, 89, 111);
+  color: white;
+  -webkit-box-shadow: -3px 3px 2px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: -3px 3px 2px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: -3px 3px 2px 0px rgba(0, 0, 0, 0.38);
+}
+
+.purchaseentry_showlastentry_topic {
+  display: flex;
+  align-items: center;
+}
+
+.purchaseentry_showlastentry_topic > h3 {
+  font-weight: 200;
+  font-size: 1.4vmax;
+}
+
+.purchaseentry_showlastentry_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchaseentry_showlastentry_content > h3 {
+  margin: 5px 10px;
+  font-weight: 200;
+}
+
+.modal-content {
+  margin: 0;
+}
+.modal_purchaseentry_date_lable_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(246, 127, 0);
+  height: 5vmax;
+  border-radius: 20px;
+  padding: 0 25px;
+}
+
+.modal_purchaseentry_date_lable {
+  font-size: 1.2vmax;
+  color: white;
+}
+
+.modal_purchaseentry_date_lable > input {
+  background-color: rgb(246, 127, 0);
+  margin-left: 20px;
+  color: white;
+  font-size: 1.2vmax;
+  outline-style: none;
+}
+
+.modal_purchaseentry_shift_lable {
+  font-size: 1.2vmax;
+  color: white;
+}
+
+.modal_purchaseentry_shift_lable > select {
+  background-color: rgb(251, 177, 97);
+  margin-left: 20px;
+  color: white;
+  font-size: 1.2vmax;
+  width: 10vmax;
+}
