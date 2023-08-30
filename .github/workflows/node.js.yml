@@ -25,3 +25,13 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build --if-present
+
+        # Install Node.js dependencies for the frontend
+      - name: Use Node.js ${{ matrix.node-version }} (frontend)
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: cd frontend
+      - run: npm ci
+      - run: npm run build --if-present
