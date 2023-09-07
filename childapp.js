@@ -4,11 +4,11 @@ const path = require("path");
 
 const errorMiddleware = require("./middlewares/error");
 
-const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors());
-app.use(bodyParser());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 //Route Imports
 const purchaseRouter = require("./routes/purchaseRoutes");

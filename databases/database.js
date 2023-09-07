@@ -9,6 +9,7 @@ const con = mysql.createConnection({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
   timezone: process.env.DB_TIMEZONE,
+  max_allowed_packet: 1024 * 1024 * 10,
 });
 
 con.connect((err) => {
